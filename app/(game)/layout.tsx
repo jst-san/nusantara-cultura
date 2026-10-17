@@ -1,0 +1,9 @@
+import { AppShell, PageTransition } from "@/components/layout/AppShell";
+
+export default function GameLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <AppShell>
+      <PageTransition>{children}</PageTransition>
+    </AppShell>
+  );
+}
